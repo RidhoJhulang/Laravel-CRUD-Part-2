@@ -33,6 +33,7 @@ class CustomerController extends Controller
         $txtAddress = $request->input('txt_address');
         
         Customer::where('customer_id', $id)->update([
+            'customer_id' => $txtId,
             'name' => $txtName,
             'address' => $txtAddress
         ]);

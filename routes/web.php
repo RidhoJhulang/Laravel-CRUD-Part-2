@@ -27,11 +27,12 @@ Route::get('/nyobak2', 'JaranController@home');
 // Route::get('Customer/create', 'CustomerController@create');
 // Route::get('Customer/store', 'CustomerController@store');
 Route::resource('Customer', 'CustomerController');
-Route::get('Karyawan', 'KaryawanController@index');
-Route::get('Product', 'ProdukController@index');
+Route::resource('Karyawan', 'KaryawanController');
+Route::resource('Product', 'ProdukController');
 // Route::get('Supplier/store', 'SupplierController@store');
 // Route::get('Supplier', 'SupplierController@index');
 // Route::get('Supplier/create', 'SupplierController'@create);
 Route::resource('Supplier', 'SupplierController');
 Route::resource('Employee', 'EmployeeController');
+Route::get('/Home', 'HomeController@index');
 

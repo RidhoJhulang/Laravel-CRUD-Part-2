@@ -57,6 +57,7 @@ class EmployeeController extends Controller
         $txtPhone = $request->input('txt_phone_number');
         
         Employee::where('employee_id', $id)->update([
+            'employee_id' => $txtId,
             'employee_name' => $txtName,
             'employee_address' => $txtAddress,
             'employee_phone_number' =>$txtPhone
